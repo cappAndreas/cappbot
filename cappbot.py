@@ -25,6 +25,6 @@ async def on_message(message):
         await message.channel.send(pyjokes.get_joke())
 
     if message.content.startswith("!chuck"):
-        await message.channel.send(data.joke)
+        await message.channel.send(cn.random().joke)
 
 client.run((TOKEN))
